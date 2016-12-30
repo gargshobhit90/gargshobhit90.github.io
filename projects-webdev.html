@@ -7,8 +7,59 @@
                     <div class="caption">                                  
                         <p><h5>Web App: Platform</h5></p>
                         <p>Description: Entire platform used to order satellite imagery and view image archives</p>
-                        <p>Made at Hera Systems</p>
-                        <p><a target="_blank" href="#" class="btn btn-default" role="button">Details</a></p>
+                        <p>Made at Hera Systems</p>                        
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+                          Details
+                        </button>
+                        </p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">Web App: Platform</h4>
+                              </div>
+                              <div class="modal-body">
+                                  <p><h4>Description</h4></p>
+                                  <p>The entire platform used by customers to order satellite imagery as well as view image archives</p>
+                                  <p>Sample usage:
+                                      <ul class="list-group">
+                                          <li class="list-group-item">Open homepage: loads a map</li>
+                                          <li class="list-group-item">Select shape from toolbar at top: rectangle or polygon</li>
+                                          <li class="list-group-item">Click on map to overlay the shape. Click and drag to adjust size of area to image</li>
+                                          <li class="list-group-item">Right click on shape and choose options such as "still or video", "frame rate", "time of day desired", etc. from modal box</li>
+                                          <li class="list-group-item">Draw multiple shapes</li>
+                                          <li class="list-group-item">Click submit when done</li>
+                                          <li class="list-group-item">Algorithm checks if this area has been imaged before, and shows a thumbnail if it has. User has option to buy this archived image</li>
+                                      </ul>
+                                  </p>                                  
+                                  <p><h4>Features</h4></p>
+                                  <p>
+                                      <ul class="list-group">
+                                          <li class="list-group-item">User authentication</li>
+                                      </ul>
+
+                                  </p>
+                                  <p><h4>Tech stack</h4></p>                                    
+                                  <p>
+                                      <ul class="list-group">
+                                          <li class="list-group-item">Frontend: Bootstrap, Google Maps API</li>
+                                          <li class="list-group-item">Backend: Django in Python, AJAX, MySQL db</li>
+                                      </ul>                                  
+                                  </p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -18,8 +69,8 @@
                     <div class="caption">
                         <p><h5>Web App: Mission Operations</h5></p>
                         <p>Description: Part of the mission operations software that is for command and control of the satellites</p>
-                        <p>Made at Hera Systems</p>
-                        <p><a target="_blank" href="#" class="btn btn-default" role="button">Details</a></p>
+                        <p>Made at Hera Systems</p>                        
+                        <p><a href="#" class="btn btn-default disabled" role="button">Details</a></p>                        
                     </div>
                 </div>
             </div>  
@@ -30,7 +81,7 @@
                         <p><h5>Analytics engine</h5></p>
                         <p>Analyze the number of users and their behavior for an imaginary chatbot application</p>  
                         <p>Side project</p>                      
-                        <p><a target="_blank" href="https://github.com/gargshobhit90/analytics" class="btn btn-default" role="button">Details</a></p>
+                        <p><a target="_blank" href="https://github.com/gargshobhit90/analytics" class="btn btn-default" role="button"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> GitHub Link</a></p>
                     </div>
                 </div>
             </div>  
@@ -42,8 +93,9 @@
                     <div class="caption">
                         <p><h5>Online Store</h5></p>
                         <p>Made an online store - a marketplace for fine jewelry.</p>  
-                        <p>Side project</p>                      
-                        <p><a target="_blank" href="#" class="btn btn-default" role="button">Details</a></p>
+                        <p>Side project</p>                                              
+                        <p><a href="#" class="btn btn-default disabled" role="button">Details</a></p>
+                        
                     </div>
                 </div>
             </div>  

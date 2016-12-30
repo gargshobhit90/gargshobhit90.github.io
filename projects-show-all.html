@@ -1,14 +1,65 @@
 <div id="project-placeholder">
     <div class="col-md-10">
-      <div class="row">
-          <div class="col-md-3">
+        <div class="row">
+            <div class="col-md-3">
                 <div class="thumbnail">
                     <img src="img/satellite-1.jpg" alt="...">
                     <div class="caption">                                  
                         <p><h5>Web App: Platform</h5></p>
                         <p>Description: Entire platform used to order satellite imagery and view image archives</p>
-                        <p>Made at Hera Systems</p>
-                        <p><a href="#" class="btn btn-default" role="button">Details</a></p>
+                        <p>Made at Hera Systems</p>                        
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+                          Details
+                        </button>
+                        </p>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">Web App: Platform</h4>
+                              </div>
+                              <div class="modal-body">
+                                  <p><h4>Description</h4></p>
+                                  <p>The entire platform used by customers to order satellite imagery as well as view image archives</p>
+                                  <p>Sample usage:
+                                      <ul class="list-group">
+                                          <li class="list-group-item">Open homepage: loads a map</li>
+                                          <li class="list-group-item">Select shape from toolbar at top: rectangle or polygon</li>
+                                          <li class="list-group-item">Click on map to overlay the shape. Click and drag to adjust size of area to image</li>
+                                          <li class="list-group-item">Right click on shape and choose options such as "still or video", "frame rate", "time of day desired", etc. from modal box</li>
+                                          <li class="list-group-item">Draw multiple shapes</li>
+                                          <li class="list-group-item">Click submit when done</li>
+                                          <li class="list-group-item">Algorithm checks if this area has been imaged before, and shows a thumbnail if it has. User has option to buy this archived image</li>
+                                      </ul>
+                                  </p>                                  
+                                  <p><h4>Features</h4></p>
+                                  <p>
+                                      <ul class="list-group">
+                                          <li class="list-group-item">User authentication</li>
+                                      </ul>
+
+                                  </p>
+                                  <p><h4>Tech stack</h4></p>                                    
+                                  <p>
+                                      <ul class="list-group">
+                                          <li class="list-group-item">Frontend: Bootstrap, Google Maps API</li>
+                                          <li class="list-group-item">Backend: Django in Python, AJAX, MySQL db</li>
+                                      </ul>                                  
+                                  </p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -18,8 +69,8 @@
                     <div class="caption">
                         <p><h5>Web App: Mission Operations</h5></p>
                         <p>Description: Part of the mission operations software that is for command and control of the satellites</p>
-                        <p>Made at Hera Systems</p>
-                        <p><a href="#" class="btn btn-default" role="button">Details</a></p>
+                        <p>Made at Hera Systems</p>                        
+                        <p><a href="#" class="btn btn-default disabled" role="button">Details</a></p>                        
                     </div>
                 </div>
             </div>  
@@ -30,60 +81,83 @@
                         <p><h5>Analytics engine</h5></p>
                         <p>Analyze the number of users and their behavior for an imaginary chatbot application</p>  
                         <p>Side project</p>                      
-                        <p><a href="#" class="btn btn-default" role="button">Details</a></p>
+                        <p><a target="_blank" href="https://github.com/gargshobhit90/analytics" class="btn btn-default" role="button"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> GitHub Link</a></p>
                     </div>
                 </div>
-            </div>                 
-      </div>
-      <div class="row">
-          <div class="col-md-3">
-              <div class="thumbnail">
-                  <img src="img/parking-lot.png" alt="...">
-                  <div class="caption">                                  
-                      <p><h5>Object detection: cars</h5></p>
-                      <p>Detect cars in parking lots and study patterns over time</p>
-                      <p>Using ML: image classification</p>
-                      <p>Made at Hera Systems</p>
-                      <p><a href="#" class="btn btn-default" role="button">Details</a></p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <div class="thumbnail">
-                  <img src="img/ships.png" alt="...">
-                  <div class="caption">
-                      <p><h5>Object detection: ships</h5></p>
-                      <p>Detect ships and provide business intelligence</p>
-                      <p>Made using blob detection and SIFT</p>
-                      <p>Made at Hera Systems</p>
-                      <p><a href="#" class="btn btn-default" role="button">Details</a></p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-3" id="projects-data-magnetosphere">
-              <div class="thumbnail">
-                  <img src="img/magnetosphere.gif" alt="...">
-                  <div class="caption">                                  
-                      <p><h5>Satellite data analysis</h5></p>
-                      <p>Simulate the Earth's magnetic field and find instances of particle entry from solar storms</p>
-                      <p>Made at UCLA Space Physics in collaboration with NASA</p>
-                      <p><a href="#" class="btn btn-default" role="button">Details</a></p>
-                  </div>
-              </div>
-          </div>
-      </div>                  
-      <div class="row">
-          <div class="col-md-3">
-              <div class="thumbnail">
-                  <img src="img/solarsystem.png" alt="...">
-                  <div class="caption">                                  
-                      <p>Animated solar system</p>
-                      <p>Description: Designed a mini solar system</p>
-                      <p>Tech stack: WebGL in C</p>
-                      <p><a href="#" class="btn btn-default" role="button">Details</a></p>
-                  </div>
-              </div>
-          </div>
-      </div>
+            </div>  
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/online-store.png" alt="...">
+                    <div class="caption">
+                        <p><h5>Online Store</h5></p>
+                        <p>Made an online store - a marketplace for fine jewelry.</p>  
+                        <p>Side project</p>                                              
+                        <p><a href="#" class="btn btn-default disabled" role="button">Details</a></p>
+                        
+                    </div>
+                </div>
+            </div>  
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/parking-lot.png" alt="...">
+                    <div class="caption">                                  
+                        <p><h5>Object detection: cars</h5></p>
+                        <p>Detect cars in parking lots and study patterns over time</p>
+                        <p>Using ML: image classification, python</p>
+                        <p>Made at Hera Systems</p>                        
+                        <p><a href="#" class="btn btn-default disabled" role="button">Details</a></p> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/ships.png" alt="...">
+                    <div class="caption">
+                        <p><h5>Object detection: ships</h5></p>
+                        <p>Detect ships and provide business intelligence</p>
+                        <p>Made using blob detection, SIFT, openCV</p>
+                        <p>Made at Hera Systems</p>
+                        <p><a href="#" class="btn btn-default disabled" role="button">Details</a></p> 
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <div class="row">
+            <div class="col-md-3" id="projects-data-magnetosphere">
+                <div class="thumbnail">
+                    <img src="img/magnetosphere.gif" alt="...">
+                    <div class="caption">                                  
+                        <p><h5>Satellite data analysis</h5></p>
+                        <p>Simulate the Earth's magnetic field and find instances of particle entry from solar storms</p>
+                        <p>Made at UCLA Space Physics in collaboration with NASA</p>
+                        <p><a target="_blank" href="http://onlinelibrary.wiley.com/doi/10.1002/2013JA019294/abstract" class="btn btn-default" role="button"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Publication</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/solarsystem.png" alt="...">
+                    <div class="caption">                                  
+                        <p><h5>Animation of a mini Solar System</h5></p>
+                        <p>Description: Designed a mini solar system</p>
+                        <p>Tech stack: WebGL in C</p>
+                        <p><a target="_blank" href="https://github.com/gargshobhit90/solar-system" class="btn btn-default" role="button"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Github</a></p>                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img src="img/roomba.jpg" alt="...">
+                    <div class="caption">                                  
+                        <p>Remote controlled Roomba</p>
+                        <p>Description: Hacked an iRobot roomba to control it's movement wirelessly from a computer or mobile phone</p>
+                        <p>Side project</p>
+                        <p><a target="_blank" href="https://github.com/gargshobhit90/Roomba-WiFi" class="btn btn-default" role="button"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Github</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>        
     </div>
 </div>
